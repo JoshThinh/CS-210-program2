@@ -12,7 +12,7 @@ int loadbalancer::getTime()
 
 void loadbalancer::incTime()
 {
-    return systemTime ++;
+    systemTime++;
 }
   
 void loadbalancer::addRequest(request r)
@@ -42,5 +42,5 @@ bool loadbalancer::isRequestQueueEmpty()
 
 int loadbalancer::getSize()
 {
-    return requestQueue.getSize();
+    return requestQueue.size();
 } 
